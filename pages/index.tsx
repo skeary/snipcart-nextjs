@@ -16,8 +16,7 @@ const Index = (props: IIndexProps) => {
     <div className="app">
       <Head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MzMxN2Y0ODMtOWNhMy00YzUzLWFiNTYtZjMwZTRkZDcxYzM4" id="snipcart"></script>
-        <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.1/default/snipcart.css" />
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
       <Header />
@@ -32,6 +31,9 @@ const Index = (props: IIndexProps) => {
         <Contact />
       </main>
       <Footer />
+      
+      <div hidden id="snipcart" data-api-key="MzMxN2Y0ODMtOWNhMy00YzUzLWFiNTYtZjMwZTRkZDcxYzM4"></div>
+      <script src="https://cdn.snipcart.com/themes/v3.0.1/default/snipcart.js"></script>
     </div>
   )
 }
