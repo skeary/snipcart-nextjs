@@ -26,6 +26,7 @@ const Product = (props: IProductProps) => {
           className="snipcart-add-item product__button"
           data-item-id={props.product.id}
           data-item-name={props.product.name}
+          data-item-quantity={3}
           data-item-price={props.product.price}
           data-item-url={props.router.pathname}
           data-item-image={props.product.image}>
